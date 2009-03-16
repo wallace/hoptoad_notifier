@@ -182,7 +182,7 @@ module HoptoadNotifier
     end
     
     def ignore_user_agent?
-      self.respond_to?(:request) && request.user_agent && request.user_agent =~ /(Microsoft Data Access Internet Publishing Provider DAV 1\.1|Microsoft Data Access Internet Publishing Provider Protocol Discovery)/
+      self.respond_to?(:request) && request.user_agent && request.user_agent =~ /(Microsoft Data Access Internet Publishing Provider DAV 1\.1|Microsoft Data Access Internet Publishing Provider Protocol Discovery|Microsoft Office Protocol Discovery)/
     end
 
     def exception_to_data exception #:nodoc:
